@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CodePro.vn - CyberSoft.edu.vn</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="./images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/animate/animate.css"
+    />
+    <!--===============================================================================================-->
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+
+  <body>
+    <div class="container-contact100">
+      <div
+        class="contact100-map"
+        id="google_map"
+        data-map-x="40.722047"
+        data-map-y="-73.986422"
+        data-pin="images/icons/map-marker.png"
+        data-scrollwhell="0"
+        data-draggable="1"
+      ></div>
+
+      <div class="contact100-more">
+        <i class="zmdi zmdi-phone-in-talk"></i>
+        (+84) 961.05.10.14
+      </div>
+
+      <div class="wrap-contact100">
+        <div>
+          <img
+            src="./images/cybersoft.png"
+            alt="Front End CyberSoft"
+            width="40%"
+          />
+          <span style="padding: 20px"></span>
+          <!-- <img src="./images/codepro.png" alt="Front End CyberSoft" width="30%" /> -->
+
+          <div style="clear: both"></div>
+          <span class="contact100-form-title"> Quản lý sinh viên </span>
+          <h2>Khu vực dự thi :</h2>
+          <ul>
+            <li class="type">
+              <input type="radio" name="selector" id="khua" />
+              <label for="khua">Khu A</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="selector" id="khub" />
+              <label for="khub">Khu B</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="selector" id="khuc" />
+              <label for="khuc">Khu C</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="selector" id="khuk" />
+              <label for="khuk">Khu vực không ưu tiên</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+          <div style="clear: both"></div>
+          <h2>Đối tượng dự thi :</h2>
+          <ul>
+            <li class="type">
+              <input type="radio" name="namee" id="khu1" />
+              <label for="khu1">Đối tượng 1</label><br>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="namee" id="khu2" />
+              <label for="khu2">Đối tượng 2</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="namee" id="khu3" />
+              <label for="khu3">Đối tượng 3</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+              <input type="radio" name="namee" id="khu4" />
+              <label for="khu4">Đối tượng 0</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+        </div>
+        <div style="clear: both"></div>
+
+        <form class="contact100-form">
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập vào điểm chuẩn</h2>
+            <input
+              class="input100"
+              type="text"
+              name="name"
+              placeholder="điểm chuẩn..."
+							id="diemchuan"
+            />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập vào điểm môn thứ nhất</h2>
+            <input
+              class="input100"
+              type="text"
+              name="name"
+              placeholder="điểm môn thứ nhất  ..."
+							id="diemMon1"
+            />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập vào điểm môn thứ hai</h2>
+            <input
+              class="input100"
+              type="text"
+              name="name"
+              placeholder="điểm môn thứ hai  ..."
+							id="diemMon2"
+            />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập vào điểm môn thứ ba</h2>
+            <input
+              class="input100"
+              type="text"
+              name="name"
+              placeholder="điểm môn thứ ba  ..."
+							id="diemMon3"
+            />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+            <button type="button" class="contact100-form-btn" onclick="buy()">
+              Kết Quả
+            </button>
+          </div>
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+          </div>
+        </form>
+
+        <div style="clear: both"></div>
+        <div id="divThanhTien" class="dongia">
+          <h2>
+            Kết quả :
+            <span id="xuatTien" class="xuatTien"></span>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="./vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="./vendor/bootstrap/js/popper.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script> -->
+    <!-- <script src="./js/map-custom.js"></script> -->
+    <!--===============================================================================================-->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
